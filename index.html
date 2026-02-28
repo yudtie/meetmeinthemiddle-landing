@@ -1,12 +1,292 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Meet Me in the Middle</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meet Me in the Middle — Find the Perfect Spot for Everyone</title>
+    <meta name="description"
+        content="Stop arguing about where to meet. Meet Me in the Middle finds the fairest spot for your whole group — live, together, in seconds." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/icon-192.webp" type="image/webp">
+    <link rel="apple-touch-icon" href="images/icon-192.webp">
 </head>
 
 <body>
-    <h1>Coming Soon</h1>
+
+    <!-- Nav -->
+    <nav>
+        <a href="#" class="nav-brand">
+            <img src="images/icon-512.webp" alt="Pin" width="28" height="28">
+            <span class="nav-name">Meet Me in the Middle</span>
+        </a>
+        <div class="nav-links">
+            <a href="#how-it-works" class="nav-link">How it works</a>
+            <a href="#features" class="nav-link">Features</a>
+            <a href="https://app.meetmeinthemiddle.app" class="nav-btn">Open App →</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-pin">
+            <img src="images/icon-512.webp" alt="Meet Me in the Middle" width="88" height="88">
+        </div>
+
+        <h1>Meet Me in the Middle</h1>
+
+        <p class="hero-sub">
+            Stop arguing about where to meet. Share a link, everyone drops a pin, and the app finds the fairest spot —
+            live, together, in seconds.
+        </p>
+
+        <a href="https://app.meetmeinthemiddle.app" class="btn-green">
+            Create New Meeting &nbsp;→
+        </a>
+
+        <div class="store-row">
+            <!-- iOS -->
+            <a href="#" class="store-btn">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                    <path
+                        d="M17.05 12.54c-.02-2.75 2.25-4.07 2.35-4.14-1.28-1.87-3.27-2.13-3.98-2.16-1.69-.17-3.31 1-4.17 1-.86 0-2.18-.98-3.59-.95C5.84 6.32 4.09 7.38 3.13 9.01c-1.92 3.33-.49 8.25 1.38 10.95.92 1.32 2 2.8 3.43 2.75 1.37-.06 1.89-.88 3.56-.88s2.13.88 3.59.85c1.48-.03 2.42-1.35 3.32-2.67.56-.82.95-1.72 1.17-2.67-2.62-1-2.59-4.69-.83-5.69l-.7-.11z"
+                        fill="#111" />
+                    <path
+                        d="M14.67 4.7c.75-.92 1.25-2.19 1.12-3.47-1.08.05-2.42.74-3.2 1.66-.69.8-1.3 2.1-1.13 3.34 1.21.08 2.46-.62 3.21-1.53z"
+                        fill="#111" />
+                </svg>
+                <div class="store-text">
+                    <span class="store-label">Download on the</span>
+                    <span class="store-name">App Store</span>
+                </div>
+            </a>
+
+            <!-- Android -->
+            <a href="#" class="store-btn">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                    <path
+                        d="M3.18 1.77C2.88 2.09 2.7 2.58 2.7 3.21v17.57c0 .63.18 1.12.48 1.44l.08.07 9.82-9.82v-.27L3.25 1.7l-.07.07z"
+                        fill="#4285F4" />
+                    <path
+                        d="M16.7 15.87l-3.5-3.57v-.22l3.5-3.57.08.04 4.15 2.36c1.18.67 1.18 1.78 0 2.45l-4.15 2.47-.08.04z"
+                        fill="#FBBC04" />
+                    <path d="M16.78 15.83 13.2 12.23 3.18 22.22c.39.42 1.04.47 1.76.05l11.84-6.44" fill="#EA4335" />
+                    <path d="M16.78 8.64 4.94 2.2C4.22 1.78 3.57 1.83 3.18 2.25l10.02 9.98 3.58-3.59z" fill="#34A853" />
+                </svg>
+                <div class="store-text">
+                    <span class="store-label">Get it on</span>
+                    <span class="store-name">Google Play</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Feature cards — mirrors the app's 3 cards -->
+    <div class="cards-section">
+        <div class="cards">
+            <div class="card-base feat-card reveal">
+                <div class="icon-box icon-green">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M13 2 4.09 12.11H11L10 22 20.5 9.89H13.91L13 2z" fill="white" stroke="white"
+                            stroke-width="0.3" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <h3>Real-time Sync</h3>
+                <p>Instant updates as users share their locations and make selections.</p>
+            </div>
+
+            <div class="card-base feat-card reveal" style="transition-delay:0.1s">
+                <div class="icon-box icon-blue">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M9 3 3 6.5v14L9 17l6 3.5 6-3.5V3l-6 3.5L9 3z" stroke="white" stroke-width="2"
+                            stroke-linejoin="round" />
+                        <path d="M9 3v14M15 6.5v14" stroke="white" stroke-width="2" />
+                    </svg>
+                </div>
+                <h3>Smart Midpoint</h3>
+                <p>Calculates fair meeting points based on actual drive times.</p>
+            </div>
+
+            <div class="card-base feat-card reveal" style="transition-delay:0.2s">
+                <div class="icon-box icon-green">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <rect x="5" y="11" width="14" height="10" rx="2" stroke="white" stroke-width="2" />
+                        <path d="M8 11V7a4 4 0 0 1 8 0v4" stroke="white" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                </div>
+                <h3>Private &amp; Secure</h3>
+                <p>No account needed. Sessions expire after 6 hours automatically.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- How It Works -->
+    <section class="section" id="how-it-works">
+        <div class="section-inner">
+            <div class="section-header reveal">
+                <span class="section-tag">How it works</span>
+                <h2 class="section-title">From "where should we meet?"<br>to directions in under a minute.</h2>
+                <p class="section-desc">No accounts. No setup. Just share a link.</p>
+            </div>
+
+            <div class="steps-grid">
+                <div class="card-base step-card reveal">
+                    <div class="step-num">STEP 01</div>
+                    <div class="icon-box icon-green" style="margin-bottom:14px;font-size:20px;">🔗</div>
+                    <h4>Share a link</h4>
+                    <p>Create a session in one tap. Share via text, WhatsApp, or email — however you communicate.</p>
+                </div>
+                <div class="card-base step-card reveal" style="transition-delay:0.08s">
+                    <div class="step-num">STEP 02</div>
+                    <div class="icon-box icon-green" style="margin-bottom:14px;font-size:20px;">📍</div>
+                    <h4>Everyone pins their location</h4>
+                    <p>Each person joins and shares where they're starting from. Just tap allow — no sign-up.</p>
+                </div>
+                <div class="card-base step-card reveal" style="transition-delay:0.16s">
+                    <div class="step-num">STEP 03</div>
+                    <div class="icon-box icon-blue" style="margin-bottom:14px;font-size:20px;">🗺️</div>
+                    <h4>See the fairest midpoint</h4>
+                    <p>The app calculates the fairest meeting point based on real travel time and shows nearby venues.
+                    </p>
+                </div>
+                <div class="card-base step-card reveal" style="transition-delay:0.24s">
+                    <div class="step-num">STEP 04</div>
+                    <div class="icon-box icon-green" style="margin-bottom:14px;font-size:20px;">✅</div>
+                    <h4>Pick a venue &amp; go</h4>
+                    <p>Browse spots, chat with your group, pick somewhere, and get directions — all in one place.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features / Why -->
+    <section class="section" id="features" style="padding-top:0">
+        <div class="section-inner">
+            <div class="section-header reveal">
+                <span class="section-tag">Features</span>
+                <h2 class="section-title">Everything you need to<br>coordinate your group.</h2>
+            </div>
+
+            <div class="why-grid">
+                <div class="card-base why-card reveal">
+                    <div class="icon-box icon-green flex-shrink-0">⚡</div>
+                    <div>
+                        <h4>Live collaboration</h4>
+                        <p>See everyone's pins update in real time — like a group chat, but on a map.</p>
+                    </div>
+                </div>
+                <div class="card-base why-card reveal" style="transition-delay:0.08s">
+                    <div class="icon-box icon-blue flex-shrink-0">👥</div>
+                    <div>
+                        <h4>3+ person sessions</h4>
+                        <p>Not just two people. Bring the whole crew. Midpoint calculation handles any group size.</p>
+                    </div>
+                </div>
+                <div class="card-base why-card reveal" style="transition-delay:0.12s">
+                    <div class="icon-box icon-green flex-shrink-0">💬</div>
+                    <div>
+                        <h4>In-app group chat</h4>
+                        <p>Coordinate without switching apps. Chat right next to the map — no phone numbers needed.</p>
+                    </div>
+                </div>
+                <div class="card-base why-card reveal" style="transition-delay:0.16s">
+                    <div class="icon-box icon-blue flex-shrink-0">🍕</div>
+                    <div>
+                        <h4>Smart venue discovery</h4>
+                        <p>Filter by restaurants, bars, cafés, parks — all within reach of your actual midpoint.</p>
+                    </div>
+                </div>
+                <div class="card-base why-card reveal" style="transition-delay:0.2s">
+                    <div class="icon-box icon-green flex-shrink-0">🧭</div>
+                    <div>
+                        <h4>Instant directions</h4>
+                        <p>Pick a venue and everyone gets their own turn-by-turn route — right from the app.</p>
+                    </div>
+                </div>
+                <div class="card-base why-card reveal" style="transition-delay:0.24s">
+                    <div class="icon-box icon-blue flex-shrink-0">🔒</div>
+                    <div>
+                        <h4>Zero data retention</h4>
+                        <p>Sessions auto-delete after 6 hours. No account required. Your location never persists.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <div class="cta-banner">
+        <div class=" cta-inner reveal">
+            <h2>Ready to meet in the middle?</h2>
+            <p>No sign-up. No setup. Share a link and go.</p>
+            <a href="https://app.meetmeinthemiddle.app" class="btn-green" style="animation:none;margin-bottom:20px;">
+                Create New Meeting &nbsp;→
+            </a>
+            <div class="store-row" style="margin-top:16px;">
+                <a href="#" class="store-btn">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M17.05 12.54c-.02-2.75 2.25-4.07 2.35-4.14-1.28-1.87-3.27-2.13-3.98-2.16-1.69-.17-3.31 1-4.17 1-.86 0-2.18-.98-3.59-.95C5.84 6.32 4.09 7.38 3.13 9.01c-1.92 3.33-.49 8.25 1.38 10.95.92 1.32 2 2.8 3.43 2.75 1.37-.06 1.89-.88 3.56-.88s2.13.88 3.59.85c1.48-.03 2.42-1.35 3.32-2.67.56-.82.95-1.72 1.17-2.67-2.62-1-2.59-4.69-.83-5.69l-.7-.11z"
+                            fill="#111" />
+                        <path
+                            d="M14.67 4.7c.75-.92 1.25-2.19 1.12-3.47-1.08.05-2.42.74-3.2 1.66-.69.8-1.3 2.1-1.13 3.34 1.21.08 2.46-.62 3.21-1.53z"
+                            fill="#111" />
+                    </svg>
+                    <div class="store-text">
+                        <span class="store-label">Download on the</span>
+                        <span class="store-name">App Store</span>
+                    </div>
+                </a>
+                <a href="#" class="store-btn">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M3.18 1.77C2.88 2.09 2.7 2.58 2.7 3.21v17.57c0 .63.18 1.12.48 1.44l.08.07 9.82-9.82v-.27L3.25 1.7l-.07.07z"
+                            fill="#4285F4" />
+                        <path
+                            d="M16.7 15.87l-3.5-3.57v-.22l3.5-3.57.08.04 4.15 2.36c1.18.67 1.18 1.78 0 2.45l-4.15 2.47-.08.04z"
+                            fill="#FBBC04" />
+                        <path d="M16.78 15.83 13.2 12.23 3.18 22.22c.39.42 1.04.47 1.76.05l11.84-6.44" fill="#EA4335" />
+                        <path d="M16.78 8.64 4.94 2.2C4.22 1.78 3.57 1.83 3.18 2.25l10.02 9.98 3.58-3.59z"
+                            fill="#34A853" />
+                    </svg>
+                    <div class="store-text">
+                        <span class="store-label">Get it on</span>
+                        <span class="store-name">Google Play</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <span class="footer-copy">© 2026 Meet Me in the Middle</span>
+        <div class="footer-links">
+            <a href="https://app.meetmeinthemiddle.app/privacy">Privacy</a>
+            <a href="mailto:support@markyudt.com?subject=Issue Report" class="report-link">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path
+                        d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
+                    <line x1="12" y1="9" x2="12" y2="13" />
+                    <line x1="12" y1="17" x2="12.01" y2="17" />
+                </svg>
+                Report
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        const io = new IntersectionObserver(entries => {
+            entries.forEach(e => {
+                if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+    </script>
 </body>
 
 </html>
